@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML과제</title>
+  </head>
+  <style>
+    body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    table {
+      width: 700px;
+      height: 200px;
+      text-align: center;
+      border-collapse: collapse;
+    }
+
+    input {
+      margin-bottom: 20px;
+    }
+
+    .title {
+      background-color: rgb(236, 234, 234);
+      border-top: 1px solid rgb(196, 192, 192);
+      border-bottom: 1px solid rgb(196, 192, 192);
+    }
+
+    img {
+      width: 30px;
+    }
+
+    ul {
+      background-color: rgb(236, 234, 234);
+    }
+
+    h4 {
+      color: brown;
+    }
+  
+  </style>
+  <body>
+    <div>
+    <h1>교육 게시판</h1>
+    <input type="text" placeholder="검색" />
+    <table>
+      <tr class="title">
+        <th>번호</th>
+        <th>분류</th>
+        <th>제목</th>
+        <th>상태</th>
+        <th>날짜</th>
+        <th>조회수</th>
+      </tr>
+      <tr> 
+          <td>1</td>
+          <td><img src="./html.png" alt="Html마크"></td>
+          <td> 
+            <a href="https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web/HTML_basics"
+            target="_blank">HTML 구조 
+            </a>
+          </td>
+          <td>완료</td>
+          <td>2022.06.15</td>
+          <td>30</td>
+        </a>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><img src="./html.png" alt="Html마크"></td>
+        <td>HTML 기본문법</td>
+        <td>완료</td>
+        <td>2022.06.15</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><img src="./html.png" alt="Html마크"></td>
+        <td>
+            <a href="https://developer.mozilla.org/ko/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML" target="_parent">
+            HTML 이미지
+            </a>
+        </td>
+        <td>완료</td>
+        <td>2022.06.15</td>
+        <td>35</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td><img src="./html.png" alt="Html마크"></td>
+        <td>
+            <a href="https://developer.mozilla.org/ko/docs/Learn/HTML/Tables"
+            target="_blank">
+            HTML Table
+            </a>
+        </td>
+        <td>완료</td>
+        <td>2022.06.15</td>
+        <td>35</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><img src="./css.png" alt="css마크"></td>
+        <td>CSS 스타일</td>
+        <td><b>대기</b></td>
+        <td>2022.06.17</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td><img src="./산돌1.png" alt="산돌마크"></td>
+        <td colspan="4">다음은 무엇을 배울까요?</td>
+      </tr>
+    </table>
+    <br>
+    <h2>간식 추천 리스트</h2>
+    <ul>
+        <li>음료
+            <ol type="A">
+                <li><strong>스트롱 아이스 아메리카노</strong></li>
+                <li><i>이탤릭 콜드브루 오트라떼</i></li>
+                <li>아이스 차이티라떼</li>
+            </ol>
+        </li>
+        <h4>MEMO</h4>
+            <p>차이티라떼에 샷을 추가하면 더티차이티라떼가 됩니다.<br>이것도 추천합니다!</p>
+    </ul> 
+    <hr>
+    <ul>
+        <li>디저트
+            <ol type="I">
+                <li><em>방금 구운</em> 감자빵</li>
+                <li><del>꼴랑</del> 아니고 말랑카우</li>
+                <li>허니<u>통통</u></li>
+            </ol>
+        </li>
+        <h4>MEMO</h4>
+            <pre>감자빵은 메가커피에서 살 수 있어요.
+            근데             쿠팡에서도 살 수 있 어 요.
+            </pre>
+    </ul>    
+</div>
+  </body>
+</html>
