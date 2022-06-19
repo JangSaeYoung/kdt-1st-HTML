@@ -1,5 +1,4 @@
 # kdt-1st-HTML
-<h2>결과물</h2>
 ![KDT과제](https://user-images.githubusercontent.com/89016723/174494582-12ec55fb-e8b5-471d-a02d-e8e40a4bdfc4.gif)
 
 
