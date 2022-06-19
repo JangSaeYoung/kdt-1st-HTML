@@ -1,0 +1,126 @@
+* {
+  color: black;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  width: 700px;
+  height: 200px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+input {
+  margin-bottom: 20px;
+}
+
+.title {
+  background-color: rgb(236, 234, 234);
+  border-top: 1px solid rgb(196, 192, 192);
+  border-bottom: 1px solid rgb(196, 192, 192);
+}
+
+img {
+  width: 30px;
+}
+
+/* 부정 선택자 */
+ul:not(.linelist) {
+  background-color: rgb(236, 234, 234);
+}
+
+h4 {
+  color: brown;
+}
+
+.goto {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: bisque;
+  border-radius: 10px;
+}
+
+/* 일치 선택자 */
+p.bus_title {
+  background-color: coral;
+  font-weight: bold;
+}
+
+p.sub_title {
+  background-color: palegreen;
+  font-weight: bold;
+}
+
+/* 자식 선택자 */
+ul > .bus_pick {
+  background-color: coral;
+}
+
+/* 후손 선택자 */
+.subway .line_pick {
+  background-color: palegreen;
+}
+
+/* 인접 형제 선택자 */
+.bus_pick + li {
+  color: teal;
+}
+
+/* 일반 형제 선택자 */
+.line_pick ~ li {
+  color: blueviolet;
+}
+
+/* 가상선택자 - hover */
+#td_hover:hover {
+  color: darkorange;
+}
+
+/* 가상선택자 - active */
+#td_active:active {
+  font-size: 20px;
+}
+
+/* 가상선택자 - focus */
+input:focus {
+  background-color: palevioletred;
+}
+
+/* 가상선택자 first-child */
+#bus_line li:first-child {
+  color: rgb(97, 134, 60);
+}
+
+/* 가상선택자 last-child */
+#bus_line li:last-child {
+  font-weight: bold;
+}
+
+/* 가상선택자 nth-child */
+#sub_line li:nth-child(2) {
+  color: rgb(241, 83, 26);
+}
+
+.bus_pick::after {
+  content: "추천";
+  background-color: red;
+  color: white;
+}
+
+.bus_night::before {
+  content: "심야";
+  background-color: black;
+  color: yellow;
+}
+
+[type="password"] {
+  background-color: burlywood;
+  border: none;
+}

@@ -5,45 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML과제</title>
+    <link rel="stylesheet" href="KDT.css">
   </head>
-  <style>
-    body{
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
-
-    table {
-      width: 700px;
-      height: 200px;
-      text-align: center;
-      border-collapse: collapse;
-    }
-
-    input {
-      margin-bottom: 20px;
-    }
-
-    .title {
-      background-color: rgb(236, 234, 234);
-      border-top: 1px solid rgb(196, 192, 192);
-      border-bottom: 1px solid rgb(196, 192, 192);
-    }
-
-    img {
-      width: 30px;
-    }
-
-    ul {
-      background-color: rgb(236, 234, 234);
-    }
-
-    h4 {
-      color: brown;
-    }
-  
-  </style>
   <body>
     <div>
     <h1>교육 게시판</h1>
@@ -59,7 +22,7 @@
       </tr>
       <tr> 
           <td>1</td>
-          <td><img src="./html.png" alt="Html마크"></td>
+          <td><img src="./image/html.png" alt="Html마크"></td>
           <td> 
             <a href="https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web/HTML_basics"
             target="_blank">HTML 구조 
@@ -72,7 +35,7 @@
       </tr>
       <tr>
         <td>2</td>
-        <td><img src="./html.png" alt="Html마크"></td>
+        <td><img src="./image/html.png" alt="Html마크"></td>
         <td>HTML 기본문법</td>
         <td>완료</td>
         <td>2022.06.15</td>
@@ -80,9 +43,9 @@
       </tr>
       <tr>
         <td>3</td>
-        <td><img src="./html.png" alt="Html마크"></td>
+        <td><img src="./image/html.png" alt="Html마크"></td>
         <td>
-            <a href="https://developer.mozilla.org/ko/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML" target="_parent">
+            <a id="td_active" href="https://developer.mozilla.org/ko/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML" target="_parent">
             HTML 이미지
             </a>
         </td>
@@ -92,9 +55,9 @@
       </tr>
       <tr>
         <td>4</td>
-        <td><img src="./html.png" alt="Html마크"></td>
-        <td>
-            <a href="https://developer.mozilla.org/ko/docs/Learn/HTML/Tables"
+        <td><img src="./image/html.png" alt="Html마크"></td>
+        <td >
+            <a id="td_hover" href="https://developer.mozilla.org/ko/docs/Learn/HTML/Tables"
             target="_blank">
             HTML Table
             </a>
@@ -105,7 +68,7 @@
       </tr>
       <tr>
         <td>5</td>
-        <td><img src="./css.png" alt="css마크"></td>
+        <td><img src="./image/css.png" alt="css마크"></td>
         <td>CSS 스타일</td>
         <td><b>대기</b></td>
         <td>2022.06.17</td>
@@ -113,7 +76,7 @@
       </tr>
       <tr>
         <td>6</td>
-        <td><img src="./산돌1.png" alt="산돌마크"></td>
+        <td><img src="./image/산돌1.png" alt="산돌마크"></td>
         <td colspan="4">다음은 무엇을 배울까요?</td>
       </tr>
     </table>
@@ -144,6 +107,49 @@
             근데             쿠팡에서도 살 수 있 어 요.
             </pre>
     </ul>    
-</div>
+    <!-- 선택자 사용하기   -->
+    <h2>학원 가는 길 🗺</h2>
+    <div class="goto">
+        <div class="bus">
+          <p class="bus_title">버스를 이용해요</p>
+          <ul class="linelist" id="bus_line">
+            <li>7720</li>
+            <li class="bus_pick">753</li>
+            <li class="bus_night">N75</li>
+            <li>7613</li>
+          </ul>
+        </div>
+        <div class="subway">
+          <p class="sub_title">지하철을 이용해요</p>
+          <ul class="linelist" id="sub_line">
+            <li>1호선</li>
+            <li>3호선</li>
+            <li class="line_pick">경의중앙선</li>
+            <li>6호선</li>
+            <li>2호선</li>
+          </ul>
+        </div>
+        <div>
+        <p>기타 교통 수단</p>
+        <ol>
+          <li>🚕</li>
+          <li>🚲</li>
+          <li>🛵</li>
+          <li>✈️</li>
+        </ol>
+      </div>
+    </div>
+    <h2>어떤 교통수단이 좋으세요? 😃</h2>
+       <div>
+        <input type="checkbox" value="got0"> 버스
+        <input type="checkbox" value="goto"> 지하철
+        <input type="checkbox"value="goto" disabled> 기타 교통 수단
+        <br>
+        <span>다른 것도 있나요?</span>
+        <input type="text" placeholder="자유롭게 입력해주세요"> 
+        <input type="password" placeholder="자유 보장 비밀번호"> 
+
+       </div>
+  </div>
   </body>
 </html>
