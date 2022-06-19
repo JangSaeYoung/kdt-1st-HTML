@@ -122,7 +122,7 @@
         <div class="subway">
           <p class="sub_title">지하철을 이용해요</p>
           <ul class="linelist" id="sub_line">
-            <li>1호선</li>
+            <li id="line_one">1호선</li>
             <li>3호선</li>
             <li class="line_pick">경의중앙선</li>
             <li>6호선</li>
@@ -140,16 +140,16 @@
       </div>
     </div>
     <h2>어떤 교통수단이 좋으세요? 😃</h2>
-       <div>
-        <input type="checkbox" value="got0"> 버스
-        <input type="checkbox" value="goto"> 지하철
-        <input type="checkbox"value="goto" disabled> 기타 교통 수단
-        <br>
-        <span>다른 것도 있나요?</span>
-        <input type="text" placeholder="자유롭게 입력해주세요"> 
-        <input type="password" placeholder="자유 보장 비밀번호"> 
-
-       </div>
+    <div>
+      <input type="checkbox" value="goto"> 버스
+      <input type="checkbox" value="goto"> 지하철
+      <input type="checkbox" value="goto"> 기타 교통 수단
+      <input type="text" placeholder="추천 이유" disabled>
+      <br>
+      <span>다른 것도 있나요?</span>
+      <input type="text" placeholder="자유롭게 입력해주세요"> 
+      <input type="password" placeholder="자유 보장 비밀번호"> 
+    </div>
   </div>
   </body>
 </html>

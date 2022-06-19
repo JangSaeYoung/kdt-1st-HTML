@@ -47,6 +47,10 @@ h4 {
   border-radius: 10px;
 }
 
+#line_one {
+  font-weight: bold;
+}
+
 /* 일치 선택자 */
 p.bus_title {
   background-color: coral;
@@ -120,6 +124,13 @@ input:focus {
   color: yellow;
 }
 
+/* 속성 선택자 ATTR */
+[disabled] {
+  background-color: rgb(177, 242, 244);
+  border: none;
+}
+
+/* 속성 선택자 ATTR=VALUE */
 [type="password"] {
   background-color: burlywood;
   border: none;
