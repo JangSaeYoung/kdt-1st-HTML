@@ -1,0 +1,163 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8e8e8;
+}
+
+.container {
+  height: auto;
+  padding: 40px;
+  background-color: #e8e8e8;
+}
+
+h1 {
+  margin: 0px;
+  padding-bottom: 40px;
+  font-size: 10em;
+  font-weight: 900;
+  color: #da0037;
+  text-align: center;
+  text-shadow: -0.0625em 0.0625em 0px #fff,
+    calc((-0.0625em) - (0.025em)) calc((0.0625em) + (0.025em)) 0px #ffc107;
+}
+
+/* span 사용한 요일 - display 변경 */
+span {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #59886b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+span.day_color {
+  background-color: #ffc85c;
+}
+
+/* div 사용한 날짜 - display 병경 */
+.weeks {
+  font-size: 0;
+}
+
+.week1 > div {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  color: white;
+  font-size: 20px;
+}
+
+.week1 > .date {
+  background-color: #f6d887;
+  color: black;
+}
+
+.week2 > div,
+.week3 > div,
+.week4 > div,
+.week5 > div {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #f6d887;
+  color: black;
+  font-size: 20px;
+}
+
+/* 수업날짜 - class선택자 사용 */
+.weeks .class_day {
+  background-color: #6f9eaf;
+}
+
+/* 포스코 표시 */
+.week1 #posco {
+  background-color: #11698e;
+}
+
+/* 가상 요소 선택자 사용한 콘텐츠 삽입 */
+#posco::after {
+  content: "포스코";
+  margin: 5px;
+  padding: 0px 10px;
+  color: black;
+  background-color: white;
+  border: 5px double red;
+  border-radius: 5px;
+}
+
+/* 일요일 표시 */
+.week1 #sunday {
+  background-color: #a9294f;
+}
+
+.weeks .sunday {
+  background-color: #a9294f;
+}
+
+.weeks #dark_sunday {
+  background-color: #c35c7b;
+}
+
+/* 날짜 구분 배경색 - 가상 클래스 선택자 사용*/
+.week2 div:nth-child(2n) {
+  background-color: #c7753d;
+}
+
+.week4 div:nth-child(2n) {
+  background-color: #c7753d;
+}
+
+.line {
+  display: inline-block;
+  height: 20px;
+  border-style: dashed;
+  border-color: red;
+}
+
+.line1 {
+  display: inline-block;
+  height: 50px;
+  border-style: dashed;
+  border-color: orange;
+}
+
+.line2 {
+  display: inline-block;
+  height: 40px;
+  border-style: dashed;
+  border-color: yellow;
+}
+
+.line3 {
+  display: inline-block;
+  height: 10px;
+  border-style: dashed;
+  border-color: green;
+}
+
+.line4 {
+  display: inline-block;
+  height: 60px;
+  border-style: dashed;
+  border-color: blue;
+}
+
+.line5 {
+  display: inline-block;
+  height: 70px;
+  border-style: dashed;
+  border-color: navy;
+}
+
+.line6 {
+  display: inline-block;
+  height: 30px;
+  border-style: dashed;
+  border-color: purple;
+}
