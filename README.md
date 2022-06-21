@@ -4,7 +4,7 @@
 
 ![KDT과제](https://user-images.githubusercontent.com/89016723/174494582-12ec55fb-e8b5-471d-a02d-e8e40a4bdfc4.gif)
 
-<img width="727" alt="calendar" src="https://user-images.githubusercontent.com/89016723/174735323-0443556e-e944-4053-807b-8a4e56b6d9a3.png">
+<img width="800" alt="calendar" src="https://user-images.githubusercontent.com/89016723/174735323-0443556e-e944-4053-807b-8a4e56b6d9a3.png">
 
 
 <h2>블로그</h2>
