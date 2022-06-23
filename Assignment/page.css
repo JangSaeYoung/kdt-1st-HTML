@@ -16,7 +16,7 @@ body {
 }
 
 .top_nav {
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-color: skyblue;
   position: fixed;
