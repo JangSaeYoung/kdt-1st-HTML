@@ -6,7 +6,7 @@
 
 <img width="800" alt="calendar" src="https://user-images.githubusercontent.com/89016723/174735323-0443556e-e944-4053-807b-8a4e56b6d9a3.png">
 
-![화면 기록 2022-06-23 오후 3 03 50](https://user-images.githubusercontent.com/89016723/175226800-c5dd757d-5620-4f86-ab4f-111d442ac039.gif)
+![화면 기록 2022-06-23 오후 3 07 51](https://user-images.githubusercontent.com/89016723/175227501-d1490f05-5646-447b-b75f-223cc6ff8262.gif)
 
 
 <h2>블로그</h2>
