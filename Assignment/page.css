@@ -1,0 +1,76 @@
+body {
+  margin: 0px;
+  height: 3000px;
+  background-image: url("https://mblogthumb-phinf.pstatic.net/20160127_177/krazymouse_1453865104404DjQIi_PNG/%C4%AB%C4%AB%BF%C0%C7%C1%B7%BB%C1%EE_%B6%F3%C0%CC%BE%F0.png?type=w2");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: right;
+}
+
+/* nav */
+.nav {
+  display: inline-flex;
+  height: 70px;
+  width: 100%;
+}
+
+.top_nav {
+  justify-content: space-between;
+  align-items: center;
+  background-color: skyblue;
+  position: fixed;
+  z-index: 1;
+}
+
+.bottom_nav {
+  justify-content: space-between;
+  align-items: center;
+  background-color: green;
+  position: fixed;
+  bottom: 0;
+}
+
+/* item */
+.item {
+  height: 50px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 50px;
+}
+
+/* item 고정 비율 */
+.top_item {
+  background-color: aliceblue;
+  flex-basis: 150px;
+}
+
+.top_item:hover {
+  background-color: grey;
+  color: white;
+}
+
+.bottom_item {
+  background-color: yellowgreen;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.bottom_item:nth-child(4) {
+  flex-grow: 2;
+}
+
+.bottom_item:hover {
+  background-color: black;
+  color: white;
+}
+
+/* 그라이데이션 div */
+.gradient {
+  position: relative;
+  left: 20px;
+  height: 3000px;
+  width: 100px;
+  background: linear-gradient(orange, black);
+}
