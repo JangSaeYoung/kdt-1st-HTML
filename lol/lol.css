@@ -1,0 +1,258 @@
+body {
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/186/240/1005/pyke-league-of-legends-ashen-knight-pyke-league-of-legends-hd-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 1000px;
+  color: darkgray;
+}
+
+.nav {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 50px;
+  width: 800px;
+  height: 60px;
+  border-bottom: 2px solid darkorange;
+  font-size: 19px;
+}
+
+.nav_icon {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.nav_icon li {
+  width: 35px;
+  height: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.nav_icon .icon {
+  background: url(../image/dice-d6-solid.svg);
+  background-repeat: no-repeat;
+}
+
+.nav_icon .icon1 {
+  background: url(../image/fire-solid.svg);
+  background-repeat: no-repeat;
+}
+
+.nav_icon .icon2 {
+  background: url(../image/bell-slash-solid.svg);
+  background-repeat: no-repeat;
+}
+
+.nav_serch {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+input {
+  width: 255px;
+  height: 35px;
+  padding-left: 10px;
+  font-size: 20px;
+  background-color: #0b0b0b5d;
+  border: 1px solid darkorange;
+}
+
+/* 보이지 않는 content를 위한 스크롤 적용 */
+.champions {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 10px 50px;
+  width: 800px;
+  height: 700px;
+  overflow-y: scroll;
+}
+
+.image {
+  width: 120px;
+  height: 120px;
+  box-sizing: border-box;
+  margin: 10px 0;
+  border: 2px solid rgb(93, 93, 93);
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* image hover시 테두리 변화 */
+.image:hover {
+  border-width: 3px;
+  border-color: burlywood;
+}
+
+/* 무작위칸 선택 시  */
+.character1:active {
+  background-image: url(../image/산돌1.png);
+}
+
+/* 기본 active 효과 적용 */
+.image:active:not(.character2, .character6, .character7, .character27) {
+  border-width: 3px;
+  border-radius: 50%;
+  border-color: burlywood;
+}
+
+/* active로 배경이미지 변경 적용 */
+.character2:active {
+  border: none;
+  background-image: url(../image/c가렌.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.character6:active {
+  border: none;
+  background-image: url(../image/c그레이브즈.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.character7:active {
+  border: none;
+  background-image: url(../image/c그웬.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.character27:active {
+  border: none;
+  background-image: url(../image/c렉사이.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* unlock_mark 위치 조절을 위한 relative 설정 */
+.champion {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* 문서 흐름 벗어나기 위한 absolute 설정 */
+.unlock_mark {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(49, 207, 207);
+  background-image: url(../image/unlock-keyhole-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 17px;
+  background-position: center;
+  border-radius: 50%;
+}
+
+/* character image 설정 */
+.character1 {
+  background-image: url("../image/무작위.png");
+}
+.character2 {
+  background-image: url("../image/가렌.webp");
+}
+.character3 {
+  background-image: url("../image/갈리오.webp");
+}
+.character4 {
+  background-image: url("../image/갱플랭크.webp");
+}
+.character5 {
+  background-image: url("../image/그라가스.webp");
+}
+.character6 {
+  background-image: url("../image/그레이브즈.webp");
+}
+.character7 {
+  background-image: url("../image/그웬.webp");
+}
+.character8 {
+  background-image: url("../image/나르.webp");
+}
+.character9 {
+  background-image: url("../image/나미.webp");
+}
+.character10 {
+  background-image: url("../image/나서스.webp");
+}
+.character11 {
+  background-image: url("../image/노틸러스.webp");
+}
+.character12 {
+  background-image: url("../image/녹턴.png");
+}
+.character13 {
+  background-image: url("../image/누누와\ 윌럼프.webp");
+}
+.character14 {
+  background-image: url("../image/니달리.webp");
+}
+.character15 {
+  background-image: url("../image/니코.webp");
+}
+.character16 {
+  background-image: url("../image/다리우스.webp");
+}
+.character17 {
+  background-image: url("../image/다이애나.webp");
+}
+.character18 {
+  background-image: url("../image/드레이븐.png");
+}
+.character19 {
+  background-image: url("../image/라이즈.webp");
+}
+/* 21 */
+.character20 {
+  background-image: url("../image/라칸.webp");
+}
+.character21 {
+  background-image: url("../image/람머스.webp");
+}
+.character22 {
+  background-image: url("../image/럭스.webp");
+}
+.character23 {
+  background-image: url("../image/럼블.webp");
+}
+.character24 {
+  background-image: url("../image/레나타\ 글라스크.webp");
+}
+.character25 {
+  background-image: url("../image/레넥톤.webp");
+}
+.character26 {
+  background-image: url("../image/레오나.webp");
+}
+.character27 {
+  background-image: url("../image/렉사이.webp");
+}
+.character28 {
+  background-image: url("../image/렐.png");
+}
+.character29 {
+  background-image: url("../image/렝가.webp");
+}
+.character30 {
+  background-image: url("../image/루시안.png");
+}
